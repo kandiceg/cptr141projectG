@@ -1,7 +1,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <windows.h>
-#include <graphics.h>   //remember to include the graphics library
+#include <graphics.h>
+#include <windowsx.h>
 
 using namespace std;
 
@@ -19,16 +20,16 @@ void maskrender(void *pic, void *mask, int x, int y){
     putimage(x, y, pic, AND_PUT);
 }
 
-bool checkmouseover(int x, int y, int xr, int yr){
+/*bool checkmouseover(int x, int y, int xr, int yr){
 
     if (mousex() != -1 && mousey() != -1)
         if (mousex() > x && mousex() < xr && mousey() > y && mousey() < yr)
             return 1;
     return 0;
 
-}
+}*/
 
-bool checkmouseclick(int x, int y, int xr, int yr){
+/*bool checkmouseclick(int x, int y, int xr, int yr){
 
     if (ismouseclick(WM_LBUTTONUP))
         if (mousex() > x && mousex() < xr && mousey() > y && mousey() < yr){
@@ -37,7 +38,7 @@ bool checkmouseclick(int x, int y, int xr, int yr){
     }
     return 0;
 
-}
+}*/
 
 /*void animation(){
     while(true){
@@ -70,24 +71,39 @@ int main()
     //int oldvisual =getvisualpage();
     //int oldactive = getactivepage();
     initwindow(800,500,"Play Screen");
-    memstore(background, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\PlayScreenBackground2.bmp", 800, 500);
-    memstore(playbutton, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\PlayButton3.bmp", 500,300);
-    memstore(playbuttonmask, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\PlayButton4.bmp", 500,300);
-    memstore(exitbutton, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\ExitButton3.bmp", 500, 300);
-    memstore(exitbuttonmask, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\PlayButton4.bmp", 500, 300);
-    memstore(playbutton2, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\PlayButton5.bmp", 500,300);
-    memstore(playbuttonmask2, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\practice2\\images\\PlayButton4.bmp", 500,300);
+    memstore(background, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\PlayScreenBackground2.bmp", 800, 500);
+    memstore(playbutton, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\PlayButton3.bmp", 500,300);
+    memstore(playbuttonmask, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\PlayButton4.bmp", 500,300);
+    memstore(exitbutton, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\ExitButton3.bmp", 500, 300);
+    memstore(exitbuttonmask, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\PlayButton4.bmp", 500, 300);
+    memstore(playbutton2, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\PlayButton5.bmp", 500,300);
+    memstore(playbuttonmask2, "C:\\Users\\Kandi Gage\\Desktop\\CPTR141_backup\\Project\\Main Project File\\images\\PlayButton4.bmp", 500,300);
 
     putimage(0,0,background,0);
     maskrender(playbutton, playbuttonmask, 150, 300);
     maskrender(exitbutton, exitbuttonmask, 400, 300);
-    int x,y;
-    if(true){
-    getmouseclick( WM_LBUTTONDOWN,x, y);
+
+    if (cin.get() == '\n'){
+
+    }
+
+
+
+
+    /*POINT pt;
+    if(GetAsyncKeyState(0x02))
+    {
+    GetCursorPos(&pt);
+    cout << "Click captured at (" << pt.x << "," << pt.y << ")!";
+    }*/
+
+    /*int x, y;
+
+    getmouseclick( WM_LBUTTONUP,x, y);
     cout << "The mouse was clicked at: ";
     cout << "x= " << x;
-    cout << "y= " << y;
-    }
+    cout << "y= " << y;*/
+
     /*if(checkmouseclick(150,300,300,400)){
         cout << "IT WORKS" << endl;
     }*/

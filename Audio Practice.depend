@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1433477545 source:c:\users\christian\desktop\audio practice\main.cpp
-	<iostream>
-	<Windows.h>
-	<MMSystem.h>
-

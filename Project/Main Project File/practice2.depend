@@ -18,3 +18,10 @@
 	<windows.h>
 	<graphics.h>
 
+1433869000 source:c:\users\kandi gage\desktop\cptr141_backup\project\main project file\main.cpp
+	<cstdlib>
+	<iostream>
+	<windows.h>
+	<graphics.h>
+	<windowsx.h>
+
