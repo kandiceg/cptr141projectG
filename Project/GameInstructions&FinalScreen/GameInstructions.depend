@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1433826464 source:c:\users\kandi gage\desktop\cptr141_backup\project\gameinstructions\main.cpp
+	<cstdlib>
+	<iostream>
+	<windows.h>
+	<graphics.h>
+
+1433826269 source:c:\users\kandi gage\desktop\cptr141_backup\project\gameinstructions\endmain.cpp
+	<cstdlib>
+	<iostream>
+	<windows.h>
+	<graphics.h>
+

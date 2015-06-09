@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1433300923 source:c:\users\kandi gage\desktop\cptr141_gageka\practice2\main.cpp
+	<cstdlib>
+	<iostream>
+	<graphics.h>
+
+1433538448 source:c:\users\kandi gage\desktop\cptr141_gageka\project\practice2\main.cpp
+	<cstdlib>
+	<iostream>
+	<windows.h>
+	<graphics.h>
+
+1433461788 source:c:\users\kandi gage\desktop\cptr141_gageka\project\practice2\main2.cpp
+
+1433830753 source:c:\users\kandi gage\desktop\cptr141_backup\project\practice2\main.cpp
+	<cstdlib>
+	<iostream>
+	<windows.h>
+	<graphics.h>
+
